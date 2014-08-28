@@ -1,0 +1,252 @@
+body, html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	position: relative;
+	background-color: black;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-brand:hover {
+	color: #3498db;
+}
+
+.navbar {
+	height: 80px;
+	background: rgba(255,255,255,0.9);
+	transition: background-color 180ms linear;
+	-webkit-transition: background-color 180ms linear;
+	-moz-transition: background-color 180ms linear;
+	-o-transition: background-color 180ms linear;
+	-ms-transition: background-color 180ms linear;
+}
+
+.navbar.prescrolled {
+	background: transparent;
+}
+
+.navbar-header {
+	height: 80px;
+}
+
+.navbar-default .navbar-brand {
+	font-family: 'Gochi Hand', cursive;
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 6px;
+	color: #34495e;
+	transition: color 180ms linear;
+	-webkit-transition: color 180ms linear;
+	-moz-transition: color 180ms linear;
+	-o-transition: color 180ms linear;
+	-ms-transition: color 180ms linear;
+}
+
+.navbar-default.prescrolled .navbar-brand{
+	color: white;
+}
+
+.navbar-nav {
+	margin-top: 13px;
+}
+
+.navbar-nav li a {
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.navbar-toggle {
+	margin-top: 13px;
+}
+
+.navbar-default .navbar-toggle::before {
+	display: none !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	display: block;
+	background-color: #34495e;
+	height: 4px;
+	width: 26px;
+	border-radius: 3px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 3px;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background-color: transparent;
+    border-top-color: transparent;
+  }
+  .navbar-nav {
+  	float: right;
+  }
+}
+
+.sections-container {
+	overflow-x: hidden;
+
+}
+
+.section-content {
+	background-color: white;
+	width: 100%;
+}
+
+.section-content-inner {
+	background-color: white;
+	max-width: 960px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 100px;
+	text-align: center;
+}
+
+.section-img-container {
+	min-width: 960px;
+	opacity: 1;
+}
+.background-img {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#about-pic .background-img {
+	background-image:url('../img/about.jpg')
+}
+
+#work-pic .background-img {
+	background-image:url('../img/work.jpg') /* Image from ShenQ on dribble: http://drbl.in/lqwo */
+}
+
+#contact-pic .background-img {
+	background-image:url('../img/contact.jpg')
+}
+
+.scrolldown-icon-container {
+	position: absolute;
+	top: 90%;
+	left: 0%;
+	width: 100%;
+	text-align: center;
+}
+
+.scrolldown-icon {
+	font-size: 40px;
+
+	/*Color Change Transitions*/
+	transition: color 750ms ease-in-out;
+	-webkit-transition: color 750ms ease-in-out;
+	-moz-transition: color 750ms ease-in-out;
+	-o-transition: color 750ms ease-in-out;
+	-ms-transition: color 750ms ease-in-out;
+
+	/*Standard Animation*/
+  	animation-duration: 1.5s;
+  	animation-name: bob;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+
+	/*Mozilla Animation*/
+	-moz-animation-duration: 1.5s;
+  	-moz-animation-name: bob;
+  	-moz-animation-iteration-count: infinite;
+  	-moz-animation-direction: alternate;
+
+  	/*Webkit Animation*/
+  	-webkit-animation-duration: 1.5s;
+  	-webkit-animation-name: bob;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+
+  	/*Opera Animation*/
+  	-o-animation-duration: 1.5s;
+  	-o-animation-name: bob;
+  	-o-animation-iteration-count: infinite;
+  	-o-animation-direction: alternate;
+
+  	/*IE Animation*/
+  	-ms-animation-duration: 1.5s;
+  	-ms-animation-name: bob;
+  	-ms-animation-iteration-count: infinite;
+  	-ms-animation-direction: alternate;
+}
+
+.scrolldown-icon.transparent {
+	color: transparent;
+}
+
+/*Standard Animation Keyframes*/
+@keyframes bob {
+  from {
+    padding-top: 0px;
+  }
+
+  to {
+    padding-top: 30px;
+  }
+}
+
+/*Mozilla Animation Keyframes*/
+@-moz-keyframes bob {
+  from {
+    padding-top: 0px;
+  }
+
+  to {
+    padding-top: 30px;
+  }
+}
+
+/*Webkit Animation Keyframes*/
+@-webkit-keyframes bob {
+  from {
+    padding-top: 0px;
+  }
+
+  to {
+    padding-top: 30px;
+  }
+}
+
+/*Opera Animation Keyframes*/
+@-o-keyframes bob {
+  from {
+    padding-top: 0px;
+  }
+
+  to {
+    padding-top: 30px;
+  }
+}
+
+/*IE Animation Keyframes*/
+@-ms-keyframes bob {
+  from {
+    padding-top: 0px;
+  }
+
+  to {
+    padding-top: 30px;
+  }
+}
+
+.profile-pic {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
