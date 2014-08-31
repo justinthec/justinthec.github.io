@@ -56,9 +56,13 @@ body {
 	margin-top: 13px;
 }
 
-.navbar-nav li a {
+.navbar-default .navbar-nav li a {
 	font-size: 24px;
 	font-weight: 900;
+}
+
+.navbar-default.prescrolled .navbar-nav li a {
+	color: white;
 }
 
 .navbar-toggle {
