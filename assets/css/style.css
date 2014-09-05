@@ -148,6 +148,10 @@ body {
 	text-align: center;
 }
 
+.scrolldown-icon-container a {
+	color: inherit;
+}
+
 .scrolldown-icon {
 	font-size: 40px;
 
