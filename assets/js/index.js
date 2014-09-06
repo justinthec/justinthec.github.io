@@ -72,6 +72,7 @@ function adjustWindow(){
 	    s.refresh($('.section-img-container'));
 	}
 	else{
+		alert("deleting skrollr!");
         var s = skrollr.init();
         s.destroy();
 	}
