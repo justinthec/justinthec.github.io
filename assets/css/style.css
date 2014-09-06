@@ -158,9 +158,9 @@ body {
 }
 
 @media only screen and (max-width: 767px){
-	/*.scrolldown-icon-container {
-		position: ;
-	}*/
+	.scrolldown-icon-container {
+		display: none;
+	}
 }
 
 .scrolldown-icon-container a {

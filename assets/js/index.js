@@ -50,6 +50,10 @@ function adjustWindow(){
 		winH = 550;
 	}
 
+	//Resize our slides
+	$('.section-img-container').height(winH);
+	$('.section-img-container').width(winW);
+
 	if(winW>=768){
 		var s = skrollr.init({
 			forceHeight: false
@@ -63,8 +67,6 @@ function adjustWindow(){
 	else{
         var s = skrollr.init();
         s.destroy();
-        // Resize our slides
-	    $('.section-img-container').height(winH);
 	}
 }
 /*
