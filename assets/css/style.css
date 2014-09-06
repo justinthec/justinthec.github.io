@@ -8,6 +8,14 @@ body {
 	background-color: black;
 }
 
+a {
+	color: #34495e;
+}
+
+a:hover {
+	color: #3498db;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav li a:hover,
@@ -112,7 +120,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 100px;
-	text-align: center;
+	text-align: left;
 }
 
 .section-img-container {
@@ -268,9 +276,47 @@ body {
 }
 
 .profile-pic {
-	width: 200px;
-	height: 200px;
+	width: 300px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.panel.panel-default.project-container {
+	border: none;
+	border-radius: 15px;
+	margin-top: 40px;
+}
+
+.project-img {
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 380px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 15px;
+}
+
+.project-content {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	vertical-align: middle;
+	color: white;
+}
+
+#parentteacher.project-container {
+	background-color: #1abc9c;
+}
+#parentteacher .project-img {
+	background-image:url('../img/parentteacher.jpg')
+}
+
+#chatroom.project-container {
+	background-color: #12c700;
+}
+#chatroom .project-img {
+	background-image:url('../img/chatroom.jpg')
+}
+
