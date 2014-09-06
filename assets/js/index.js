@@ -55,13 +55,12 @@ function adjustWindow(){
 		winH = 550;
 	}
 
+	//Resize our slides
+	alert("resizing height");
+	$('.section-img-container').height(winH);
+	$('.background-img').width(winW);
+	
 	if(winW>=768) {
-
-		//Resize our slides
-		alert("resizing height");
-		$('.section-img-container').height(winH);
-		$('.background-img').width(winW);
-
 		var s = skrollr.init({
 			forceHeight: false
 		});
