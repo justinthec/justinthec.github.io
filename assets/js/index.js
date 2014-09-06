@@ -2,7 +2,6 @@ function init() {
 
 	// JQuery Events
 
-
 	// ScrollSpy Settings
 	var offset = 80;
 	$('body').scrollspy({offset: offset, target: "#navbar"});
@@ -14,8 +13,11 @@ function init() {
 	    scrollBy(0, -offset+1);
 	});
 
+	// Window Resize Detection
+	// Initial Sizing
 	adjustWindow();
-
+	$(window).resize(adjustWindow);
+	
     // Navbar Scroll Detection
     $(window).scroll(function(event){
     	if($(this).scrollTop()>100)
@@ -69,18 +71,5 @@ function adjustWindow(){
         s.destroy();
 	}
 }
-/*
-function initAdjustWindow(){
-	return {
-        match : function() {
-            adjustWindow();
-        },
-        unmatch : function() {
-            adjustWindow();
-        }
-    };
-}
 
-enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
-*/
 $(document).on('ready', init);
