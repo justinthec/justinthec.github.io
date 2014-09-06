@@ -52,14 +52,12 @@ function adjustWindow(){
 		winH = 550;
 	}
 
-	//Resize the width of our slides
-	$('.background-img').width(winW);
-
 	if(winW>=768){
 
-		//Only Resize the height if on desktop as mobile browsers will scroll back to the top when the height of the page changes
+		//Resize our slides
 		$('.section-img-container').height(winH);
-		
+		$('.background-img').width(winW);
+
 		var s = skrollr.init({
 			forceHeight: false
 		});
