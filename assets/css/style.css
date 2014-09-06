@@ -123,6 +123,12 @@ a:hover {
 	text-align: left;
 }
 
+@media only screen and (max-width: 1074px){
+	.section-content-inner {
+		padding: 20px;
+	}
+}
+
 .section-img-container {
 	min-width: 960px;
 	height: 360px; /*Default until resized by skrollr*/
@@ -146,15 +152,15 @@ a:hover {
 }
 
 #about-pic .background-img {
-	background-image:url('../img/about.jpg')
+	background-image:url('../img/about.jpg');
 }
 
 #work-pic .background-img {
-	background-image:url('../img/work.jpg') /* Image from ShenQ on dribble: http://drbl.in/lqwo */
+	background-image:url('../img/work.jpg'); /* Image from ShenQ on dribble: http://drbl.in/lqwo */
 }
 
 #contact-pic .background-img {
-	background-image:url('../img/contact.jpg')
+	background-image:url('../img/contact.jpg');
 }
 
 .scrolldown-icon-container {
@@ -288,8 +294,18 @@ a:hover {
 	margin-top: 40px;
 }
 
+@media only screen and (max-width: 1074px){
+	.project-content h6 {
+		font-size: 18px;
+	}
+
+	.project-img {
+		width: inherit;
+		background-size: auto !important;
+	}
+}
+
 .project-img {
-	width: 760px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 380px;
@@ -310,13 +326,23 @@ a:hover {
 	background-color: #1abc9c;
 }
 #parentteacher .project-img {
-	background-image:url('../img/parentteacher.jpg')
+	background-image:url('../img/parentteacher.jpg');
+}
+@media only screen and (max-width: 1074px) {
+	#parentteacher .project-img {
+		background-position: top center;
+	}
 }
 
 #chatroom.project-container {
 	background-color: #12c700;
 }
 #chatroom .project-img {
-	background-image:url('../img/chatroom.jpg')
+	background-image:url('../img/chatroom.jpg');
+}
+@media only screen and (max-width: 1074px) {
+	#chatroom .project-img {
+		background-position: 10% 0%;
+	}
 }
 
