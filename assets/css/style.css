@@ -85,7 +85,7 @@ body {
 	margin-top: 3px;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .navbar-default .navbar-collapse {
     background-color: transparent;
     border-top-color: transparent;
@@ -117,8 +117,17 @@ body {
 
 .section-img-container {
 	min-width: 960px;
+	height: 360px; /*Default until resized by skrollr*/
 	opacity: 1;
 }
+
+@media only screen and (min-width: 768px) {
+	.section-img-container {
+        min-width: 768px;
+        height: 600px;
+    }
+}
+
 .background-img {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -146,6 +155,12 @@ body {
 	left: 0%;
 	width: 100%;
 	text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+	/*.scrolldown-icon-container {
+		position: ;
+	}*/
 }
 
 .scrolldown-icon-container a {
