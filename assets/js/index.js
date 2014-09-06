@@ -1,3 +1,6 @@
+// var oldH = $(window).height();
+// var oldW = $(window).width();
+
 function init() {
 
 	// JQuery Events
@@ -55,6 +58,7 @@ function adjustWindow(){
 	if(winW>=768){
 
 		//Resize our slides
+		alert("resizing height");
 		$('.section-img-container').height(winH);
 		$('.background-img').width(winW);
 
@@ -71,6 +75,9 @@ function adjustWindow(){
         var s = skrollr.init();
         s.destroy();
 	}
+
+	// oldH = winH;
+	// oldW = winW;
 }
 
 $(document).on('ready', init);
