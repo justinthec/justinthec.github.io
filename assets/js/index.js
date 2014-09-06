@@ -52,7 +52,7 @@ function adjustWindow(){
 
 	//Resize our slides
 	$('.section-img-container').height(winH);
-	$('.section-img-container').width(winW);
+	$('.background-img').width(winW);
 
 	if(winW>=768){
 		var s = skrollr.init({
