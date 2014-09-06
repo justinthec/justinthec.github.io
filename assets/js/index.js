@@ -16,7 +16,7 @@ function init() {
 	// Window Resize Detection
 	// Initial Sizing
 	adjustWindow();
-	// $(window).resize(adjustWindow);
+	$(window).resize(adjustWindow);
 	
     // Navbar Scroll Detection
     $(window).scroll(function(event){
@@ -52,11 +52,14 @@ function adjustWindow(){
 		winH = 550;
 	}
 
-	//Resize our slides
-	$('.section-img-container').height(winH);
+	//Resize the width of our slides
 	$('.background-img').width(winW);
 
 	if(winW>=768){
+
+		//Only Resize the height if on desktop as mobile browsers will scroll back to the top when the height of the page changes
+		$('.section-img-container').height(winH);
+		
 		var s = skrollr.init({
 			forceHeight: false
 		});
