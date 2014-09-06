@@ -371,3 +371,22 @@ a:hover {
 	}
 }
 
+#contact .section-content-inner {
+	text-align: center;
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact-icon path {
+    fill: #34495e;
+}
+
+.contact-icon:hover path,
+.contact-icon:focus path {
+    fill: #3498db;
+}
