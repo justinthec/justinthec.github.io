@@ -296,6 +296,13 @@ a:hover {
 	margin-right: auto;
 }
 
+/* Media Query relating to navbar width breakpoints: 767px */
+@media only screen and (max-width: 767px){
+	.profile-pic {
+		width: 150px;
+	}
+}
+
 .panel.panel-default.project-container {
 	border: none;
 	border-radius: 15px;

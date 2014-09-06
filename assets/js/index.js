@@ -16,7 +16,7 @@ function init() {
 	// Window Resize Detection
 	// Initial Sizing
 	adjustWindow();
-	$(window).resize(adjustWindow);
+	// $(window).resize(adjustWindow);
 	
     // Navbar Scroll Detection
     $(window).scroll(function(event){
