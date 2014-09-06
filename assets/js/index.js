@@ -51,16 +51,15 @@ function adjustWindow(){
 	var winW = $(window).width();
 
 	// Keep minimum height 550
-    if(winH <= 550) {
+    if(winH <= 550){
 		winH = 550;
 	}
 
 	//Resize our slides
-	alert("resizing height");
 	$('.section-img-container').height(winH);
 	$('.background-img').width(winW);
 	
-	if(winW>=768) {
+	if(winW>=768){
 		var s = skrollr.init({
 			forceHeight: false
 		});
@@ -71,9 +70,11 @@ function adjustWindow(){
 	    s.refresh($('.section-img-container'));
 	}
 	else {
-		// alert("deleting skrollr!");
-  //       var s = skrollr.init();
-  //       s.destroy();
+		if(!Modernizr.touch){
+			alert("Not a touch screen!");
+			var s = skrollr.init();
+			s.destroy();
+		} 
 	}
 
 	// oldH = winH;
