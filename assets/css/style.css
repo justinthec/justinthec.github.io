@@ -128,8 +128,8 @@ a:hover {
 	text-align: center;
 }
 
-/* Media Query relating to navbar width breakpoints: 1074px */
-@media only screen and (max-width: 1074px){
+/* Media Query relating to navbar width breakpoints: 767px */
+@media only screen and (max-width: 767px){
 	.section-content-inner {
 		padding: 20px;
 	}
@@ -302,7 +302,7 @@ a:hover {
 	margin-top: 40px;
 }
 
-/* Media Query relating to navbar width breakpoints: 1074px */
+/* Media Query relating to project-img width breakpoints: 1074px */
 @media only screen and (max-width: 1074px){
 	.project-content h6 {
 		font-size: 18px;
@@ -341,7 +341,7 @@ a:hover {
 #parentteacher .project-img {
 	background-image:url('../img/parentteacher.jpg');
 }
-/* Media Query relating to navbar width breakpoints: 1074px */
+/* Media Query relating to project-img width breakpoints: 1074px */
 /* Styles for centering the image properly when zoomed in. Configure these every time you change the image!!! */
 @media only screen and (max-width: 1074px) {
 	#parentteacher .project-img {
@@ -355,7 +355,7 @@ a:hover {
 #chatroom .project-img {
 	background-image:url('../img/chatroom.jpg');
 }
-/* Media Query relating to navbar width breakpoints: 1074px */
+/* Media Query relating to project-img width breakpoints: 1074px */
 /* Styles for centering the image properly when zoomed in. Configure these every time you change the image!!! */
 @media only screen and (max-width: 1074px) {
 	#chatroom .project-img {
