@@ -64,8 +64,6 @@ function adjustWindow(){
 			forceHeight: false
 		});
 	    
-	    // Resize our slides
-	    $('.section-img-container').height(winH);
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.section-img-container'));
 	}
