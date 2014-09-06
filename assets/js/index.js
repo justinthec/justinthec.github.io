@@ -1,6 +1,3 @@
-// var oldH = $(window).height();
-// var oldW = $(window).width();
-
 function init() {
 
 	// JQuery Events
@@ -67,16 +64,6 @@ function adjustWindow(){
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.section-img-container'));
 	}
-	else {
-		if(!Modernizr.touch){
-			alert("Not a touch screen!");
-			var s = skrollr.init();
-			s.destroy();
-		} 
-	}
-
-	// oldH = winH;
-	// oldW = winW;
 }
 
 $(document).on('ready', init);
