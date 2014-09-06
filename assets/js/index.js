@@ -55,7 +55,7 @@ function adjustWindow(){
 		winH = 550;
 	}
 
-	if(winW>=768){
+	if(winW>=768) {
 
 		//Resize our slides
 		alert("resizing height");
@@ -71,10 +71,10 @@ function adjustWindow(){
 	    // Refresh Skrollr after resizing our sections
 	    s.refresh($('.section-img-container'));
 	}
-	else{
-		alert("deleting skrollr!");
-        var s = skrollr.init();
-        s.destroy();
+	else {
+		// alert("deleting skrollr!");
+  //       var s = skrollr.init();
+  //       s.destroy();
 	}
 
 	// oldH = winH;
