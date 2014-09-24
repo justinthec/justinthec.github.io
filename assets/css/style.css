@@ -333,6 +333,35 @@ a:hover {
 	background-size: contain;
 	border-radius: 15px;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.26);
+
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+
+	/*Opacity Change Transitions*/
+	transition: opacity 100ms ease-in-out;
+	-webkit-transition: opacity 100ms ease-in-out;
+	-moz-transition: opacity 100ms ease-in-out;
+	-o-transition: opacity 100ms ease-in-out;
+	-ms-transition: opacity 100ms ease-in-out;
+}
+
+.project-img:hover {
+    opacity: 1;
+}
+
+.shade {
+	background: black;
+	border-radius: 16px;
+}
+
+.project-title {
+	color: white;
+	font-size: 40px;
+	text-shadow: 0px 0px 10px rgba(10, 10, 10, 1);
+	padding-left: 40px;
+	padding-top: 30px;
+	position: absolute;
+	z-index: 3;
 }
 
 .project-content {
