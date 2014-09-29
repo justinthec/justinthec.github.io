@@ -56,6 +56,13 @@ a:hover {
 	-ms-transition: color 180ms linear;
 }
 
+/* Media Query relating to navbar brand breakpoints: 320px */
+@media only screen and (max-width: 320px) {
+	.navbar-default .navbar-brand{
+		font-size: 22px;
+	}
+}
+
 .navbar-default.prescrolled .navbar-brand{
 	color: white;
 }
