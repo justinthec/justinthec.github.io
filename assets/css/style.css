@@ -166,7 +166,7 @@ a:hover {
 }
 
 #about-pic .background-img {
-	background-image:url('../img/about.jpg');
+	background-image:url('../img/about-compressed.jpg');
 }
 
 #work-pic .background-img {
@@ -174,7 +174,7 @@ a:hover {
 }
 
 #contact-pic .background-img {
-	background-image:url('../img/contact.jpg');
+	background-image:url('../img/contact-compressed.jpg');
 }
 
 .scrolldown-icon-container {
