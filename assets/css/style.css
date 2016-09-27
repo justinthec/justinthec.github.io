@@ -6,10 +6,11 @@ body, html {
 body {
 	position: relative;
 	background-color: white;
+  color: white;
 }
 
 a {
-	color: #34495e;
+  color: white;
 }
 
 a:hover {
@@ -117,12 +118,12 @@ a:hover {
 }
 
 .section-content {
-	background-color: white;
+	background-color: #191919;
 	width: 100%;
 }
 
 .section-content-inner {
-	background-color: white;
+	background-color: #191919;
 	max-width: 960px;
 	margin-top: 0px;
 	margin-left: auto;
@@ -419,7 +420,7 @@ a:hover {
 }
 
 .contact-icon path {
-    fill: #34495e;
+    fill: white;
 }
 
 .contact-icon:hover path,
